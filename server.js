@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import eurovisionData from './data/eurovision-winners.json'
+// import topMusicData from './data/top-music.json'
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/project-mongo";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -17,16 +18,18 @@ const Winner = mongoose.model("Winner", {
   location: String
 })
 
+
 if (process.env.RESET_DB) {
   const resetDataBase = async () => {
-    await Winner.deleteMany()
+    await Winner.deleteMany();
     eurovisionData.forEach(singleWinner => {
-      const newWinner = new Winner(singleWinner)
+      const newWinner = new Winner(singleWinner);
       newWinner.save()
     })
   }
   resetDataBase()
 }
+
 // Defines the port the app will run on. Defaults to 8080, but can be overridden
 // when starting the server. Example command to overwrite PORT env variable value:
 // PORT=9000 npm start
@@ -39,7 +42,73 @@ app.use(express.json());
 
 // Start defining your routes here
 app.get("/", (req, res) => {
-  res.send("Hello Technigo!");
+  res.send("Welcome!");
+});
+
+app.get("/winners", async (req, res) => {
+  const allWinners = await Winner.find({})
+  res.status(200).json({
+    success: true,
+    body: allWinners
+  })
+});
+
+
+app.get("/winners/id/:id", async (req, res) => {
+  try {
+    const singleWinner = await Winner.findById(req.params.id);
+    if (singleWinner) {
+      res.status(200).json({
+        success: true,
+        body: singleWinner
+      });
+    } else {
+      res.status(404).json({
+        success: false,
+        body: {
+          message: "Could not find the song"
+        }
+      });
+    }
+  } catch (error) {
+    res.status(400).json({
+      success: false,
+      body: {
+        message: "Invalid id"
+      }
+    });
+  }
+
+});
+// app.get("/songs/genre/:genre/danceability/:danceability", async (req, res) => {
+app.get("/winners/", async (req, res) => {
+
+  const { country, artist } = req.query;
+  const response = {
+    success: true,
+    body: {}
+  }
+  const matchAllRegex = new RegExp(".*");
+  const matchAllNumeric = new RegExp("[0-9]");
+  const countryQuery = country ? country : { $regex: matchAllRegex, $options: 'i' };
+  const artistQuery = artist ? artist : { $regex: matchAllRegex, $options: 'i' };
+
+  try {
+    response.body = await Song.find({ country: countryQuery, artist: artistQuery }).limit(2).sort({ energy: 1 }).select({ trackName: 1, artistName: 1 })
+
+    res.status(200).json({
+      success: true,
+      body: response
+    });
+  } catch (error) {
+    res.status(400).json({
+      success: false,
+      body: {
+        message: error
+      }
+    });
+  }
+
 });
 
 // Start the server
