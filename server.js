@@ -2,13 +2,13 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import eurovisionData from './data/eurovision-winners.json'
-// import topMusicData from './data/top-music.json'
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/project-mongo";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = Promise;
 
 const Winner = mongoose.model("Winner", {
+  id: Number,
   year: Number,
   country: String,
   song: String,
@@ -42,19 +42,11 @@ app.use(express.json());
 
 // Start defining your routes here
 app.get("/", (req, res) => {
-  res.send("Welcome!");
-});
-
-app.get("/winners", async (req, res) => {
-  const allWinners = await Winner.find({})
-  res.status(200).json({
-    success: true,
-    body: allWinners
-  })
+  res.send("Welcome! To start, add /winners to see all the different winners! For a certain winner, type /winners/<The ID>");
 });
 
 
-app.get("/winners/id/:id", async (req, res) => {
+app.get("/winners/:id", async (req, res) => {
   try {
     const singleWinner = await Winner.findById(req.params.id);
     if (singleWinner) {
@@ -89,12 +81,13 @@ app.get("/winners/", async (req, res) => {
     body: {}
   }
   const matchAllRegex = new RegExp(".*");
-  const matchAllNumeric = new RegExp("[0-9]");
+  // const matchAllNumeric = new RegExp("[0-9]");
   const countryQuery = country ? country : { $regex: matchAllRegex, $options: 'i' };
   const artistQuery = artist ? artist : { $regex: matchAllRegex, $options: 'i' };
 
   try {
-    response.body = await Song.find({ country: countryQuery, artist: artistQuery }).limit(2).sort({ energy: 1 }).select({ trackName: 1, artistName: 1 })
+    response.body = await Winner.find({ country: countryQuery, artist: artistQuery })
+    // .limit(2).sort({ energy: 1 }).select({ trackName: 1, artistName: 1 })
 
     res.status(200).json({
       success: true,

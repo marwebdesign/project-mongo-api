@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "year": 1956,
     "country": "Switzerland",
     "song": "Refrain",
@@ -9,6 +10,7 @@
     "location": "Lugano"
   },
   {
+    "id": 2,
     "year": 1957,
     "country": "Netherlands",
     "song": "Net als toen",
@@ -18,6 +20,7 @@
     "location": "Frankfurt"
   },
   {
+    "id": 3,
     "year": 1958,
     "country": "France",
     "song": "Dors, mon amour",
@@ -27,6 +30,7 @@
     "location": "Hilversum"
   },
   {
+    "id": 4,
     "year": 1959,
     "country": "Netherlands",
     "song": "Een beetje",
@@ -36,6 +40,7 @@
     "location": "Cannes"
   },
   {
+    "id": 5,
     "year": 1960,
     "country": "France",
     "song": "Tom Pillibi",
@@ -45,6 +50,7 @@
     "location": "London"
   },
   {
+    "id": 6,
     "year": 1961,
     "country": "Luxembourg",
     "song": "Nous les amoureux",
@@ -54,6 +60,7 @@
     "location": "Cannes"
   },
   {
+    "id": 7,
     "year": 1962,
     "country": "France",
     "song": "Un premier amour",
@@ -63,6 +70,7 @@
     "location": "Luxembourg"
   },
   {
+    "id": 8,
     "year": 1963,
     "country": "Denmark",
     "song": "Dansevise",
@@ -72,6 +80,7 @@
     "location": "London"
   },
   {
+    "id": 9,
     "year": 1964,
     "country": "Italy",
     "song": "Non ho l'età",
@@ -81,6 +90,7 @@
     "location": "Copenhagen"
   },
   {
+    "id": 10,
     "year": 1965,
     "country": "Luxembourg",
     "song": "Poupée de cire, poupée de son",
@@ -90,6 +100,7 @@
     "location": "Naples"
   },
   {
+    "id": 11,
     "year": 1966,
     "country": "Austria",
     "song": "Merci, Chérie",
@@ -99,6 +110,7 @@
     "location": "Luxembourg"
   },
   {
+    "id": 12,
     "year": 1967,
     "country": "United Kingdom",
     "song": "Puppet on a String",
@@ -108,6 +120,7 @@
     "location": "Vienna"
   },
   {
+    "id": 13,
     "year": 1968,
     "country": "Spain",
     "song": "La, la, la",
@@ -117,6 +130,7 @@
     "location": "London"
   },
   {
+    "id": 14,
     "year": 1969,
     "country": "Spain",
     "song": "Vivo cantando",
@@ -126,6 +140,7 @@
     "location": "Madrid"
   },
   {
+    "id": 15,
     "year": 1969,
     "country": "United Kingdom",
     "song": "Boom Bang-a-Bang",
@@ -135,6 +150,7 @@
     "location": ""
   },
   {
+    "id": 16,
     "year": 1969,
     "country": "Netherlands",
     "song": "De troubadour",
@@ -144,6 +160,7 @@
     "location": ""
   },
   {
+    "id": 17,
     "year": 1969,
     "country": "France",
     "song": "Un jour, un enfant",
@@ -153,6 +170,7 @@
     "location": ""
   },
   {
+    "id": 18,
     "year": 1970,
     "country": "Ireland",
     "song": "All Kinds of Everything",
@@ -162,6 +180,7 @@
     "location": "Amsterdam"
   },
   {
+    "id": 19,
     "year": 1971,
     "country": "Monaco",
     "song": "Un banc, un arbre, une rue",
@@ -171,6 +190,7 @@
     "location": "Dublin"
   },
   {
+    "id": 20,
     "year": 1972,
     "country": "Luxembourg",
     "song": "Après toi",
@@ -180,6 +200,7 @@
     "location": "Edinburgh"
   },
   {
+    "id": 21,
     "year": 1973,
     "country": "Luxembourg",
     "song": "Tu te reconnaîtras",
@@ -189,6 +210,7 @@
     "location": "Luxembourg"
   },
   {
+    "id": 22,
     "year": 1974,
     "country": "Sweden",
     "song": "Waterloo",
@@ -198,6 +220,7 @@
     "location": "Brighton"
   },
   {
+    "id": 23,
     "year": 1975,
     "country": "Netherlands",
     "song": "Ding-a-dong",
@@ -207,6 +230,7 @@
     "location": "Stockholm"
   },
   {
+    "id": 24,
     "year": 1976,
     "country": "United Kingdom",
     "song": "Save Your Kisses for Me",
@@ -216,6 +240,7 @@
     "location": "The Hauge"
   },
   {
+    "id": 25,
     "year": 1977,
     "country": "France",
     "song": "L'oiseau et l'enfant",
@@ -225,6 +250,7 @@
     "location": "London"
   },
   {
+    "id": 26,
     "year": 1978,
     "country": "Israel",
     "song": "A-Ba-Ni-Bi\" (א-ב-ני-בי)",
@@ -234,6 +260,7 @@
     "location": "Paris"
   },
   {
+    "id": 27,
     "year": 1979,
     "country": "Israel",
     "song": "Hallelujah\" (הללויה)",
@@ -243,6 +270,7 @@
     "location": "Jerusalem"
   },
   {
+    "id": 28,
     "year": 1980,
     "country": "Ireland",
     "song": "What's Another Year",
@@ -252,6 +280,7 @@
     "location": "The Hauge"
   },
   {
+    "id": 29,
     "year": 1981,
     "country": "United Kingdom",
     "song": "Making Your Mind Up",
@@ -261,6 +290,7 @@
     "location": "Dublin"
   },
   {
+    "id": 30,
     "year": 1982,
     "country": "Germany",
     "song": "Ein bißchen Frieden",
@@ -270,6 +300,7 @@
     "location": "Harrogate"
   },
   {
+    "id": 31,
     "year": 1983,
     "country": "Luxembourg",
     "song": "Si la vie est cadeau",
@@ -279,6 +310,7 @@
     "location": "Munich"
   },
   {
+    "id": 32,
     "year": 1984,
     "country": "Sweden",
     "song": "Diggi-Loo Diggi-Ley",
@@ -288,6 +320,7 @@
     "location": "Luxembourg"
   },
   {
+    "id": 33,
     "year": 1985,
     "country": "Norway",
     "song": "La det swinge",
@@ -297,6 +330,7 @@
     "location": "Gothenburg"
   },
   {
+    "id": 34,
     "year": 1986,
     "country": "Belgium",
     "song": "J'aime la vie",
@@ -306,6 +340,7 @@
     "location": "Bergen"
   },
   {
+    "id": 35,
     "year": 1987,
     "country": "Ireland",
     "song": "Hold Me Now",
@@ -315,6 +350,7 @@
     "location": "Brussels"
   },
   {
+    "id": 36,
     "year": 1988,
     "country": "Switzerland",
     "song": "Ne partez pas sans moi",
@@ -324,6 +360,7 @@
     "location": "Dublin"
   },
   {
+    "id": 37,
     "year": 1989,
     "country": "Yugoslavia",
     "song": "Rock Me",
@@ -333,6 +370,7 @@
     "location": "Lausanne"
   },
   {
+    "id": 38,
     "year": 1990,
     "country": "Italy",
     "song": "Insieme: 1992",
@@ -342,6 +380,7 @@
     "location": "Zagreb"
   },
   {
+    "id": 39,
     "year": 1991,
     "country": "Sweden",
     "song": "Fångad av en stormvind",
@@ -351,6 +390,7 @@
     "location": "Rome"
   },
   {
+    "id": 40,
     "year": 1992,
     "country": "Ireland",
     "song": "Why Me?",
@@ -360,6 +400,7 @@
     "location": "Malmö"
   },
   {
+    "id": 41,
     "year": 1993,
     "country": "Ireland",
     "song": "In Your Eyes",
@@ -369,6 +410,7 @@
     "location": "Millstreet"
   },
   {
+    "id": 42,
     "year": 1994,
     "country": "Ireland",
     "song": "Rock 'n' Roll Kids",
@@ -378,6 +420,7 @@
     "location": "Dublin"
   },
   {
+    "id": 43,
     "year": 1995,
     "country": "Norway",
     "song": "Nocturne",
@@ -387,6 +430,7 @@
     "location": "Dublin"
   },
   {
+    "id": 44,
     "year": 1996,
     "country": "Ireland",
     "song": "The Voice",
@@ -396,6 +440,7 @@
     "location": "Oslo"
   },
   {
+    "id": 45,
     "year": 1997,
     "country": "United Kingdom",
     "song": "Love Shine a Light",
@@ -405,6 +450,7 @@
     "location": "Dublin"
   },
   {
+    "id": 46,
     "year": 1998,
     "country": "Israel",
     "song": "Diva\" (דיווה)",
@@ -414,6 +460,7 @@
     "location": "Birmingham"
   },
   {
+    "id": 47,
     "year": 1999,
     "country": "Sweden",
     "song": "Take Me to Your Heaven",
@@ -423,6 +470,7 @@
     "location": "Jerusalem"
   },
   {
+    "id": 48,
     "year": 2000,
     "country": "Denmark",
     "song": "Fly on the Wings of Love",
@@ -432,6 +480,7 @@
     "location": "Stockholm"
   },
   {
+    "id": 49,
     "year": 2001,
     "country": "Estonia",
     "song": "Everybody",
@@ -441,6 +490,7 @@
     "location": "Copenhagen"
   },
   {
+    "id": 50,
     "year": 2002,
     "country": "Latvia",
     "song": "I Wanna",
@@ -450,6 +500,7 @@
     "location": "Tallinn"
   },
   {
+    "id": 51,
     "year": 2003,
     "country": "Turkey",
     "song": "Everyway That I Can",
@@ -459,6 +510,7 @@
     "location": "Riga"
   },
   {
+    "id": 52,
     "year": 2004,
     "country": "Ukraine",
     "song": "Wild Dances",
@@ -468,6 +520,7 @@
     "location": "Istanbul"
   },
   {
+    "id": 53,
     "year": 2005,
     "country": "Greece",
     "song": "My Number One",
@@ -477,6 +530,7 @@
     "location": "Kyiv"
   },
   {
+    "id": 54,
     "year": 2006,
     "country": "Finland",
     "song": "Hard Rock Hallelujah",
@@ -486,6 +540,7 @@
     "location": "Athens"
   },
   {
+    "id": 55,
     "year": 2007,
     "country": "Serbia",
     "song": "Molitva\" (Молитва)",
@@ -495,6 +550,7 @@
     "location": "Helsimki"
   },
   {
+    "id": 56,
     "year": 2008,
     "country": "Russia",
     "song": "Believe",
@@ -504,6 +560,7 @@
     "location": "Belgrade"
   },
   {
+    "id": 57,
     "year": 2009,
     "country": "Norway",
     "song": "Fairytale",
@@ -513,6 +570,7 @@
     "location": "Moscow"
   },
   {
+    "id": 58,
     "year": 2010,
     "country": "Germany",
     "song": "Satellite",
@@ -522,6 +580,7 @@
     "location": "Oslo"
   },
   {
+    "id": 59,
     "year": 2011,
     "country": "Azerbaijan",
     "song": "Running Scared",
@@ -531,6 +590,7 @@
     "location": "Dussëldorf"
   },
   {
+    "id": 60,
     "year": 2012,
     "country": "Sweden",
     "song": "Euphoria",
@@ -540,6 +600,7 @@
     "location": "Baku"
   },
   {
+    "id": 61,
     "year": 2013,
     "country": "Denmark",
     "song": "Only Teardrops",
@@ -549,6 +610,7 @@
     "location": "Malmö"
   },
   {
+    "id": 62,
     "year": 2014,
     "country": "Austria",
     "song": "Rise Like a Phoenix",
@@ -558,6 +620,7 @@
     "location": "Copenhagen"
   },
   {
+    "id": 63,
     "year": 2015,
     "country": "Sweden",
     "song": "Heroes",
@@ -567,6 +630,7 @@
     "location": "Vienna"
   },
   {
+    "id": 64,
     "year": 2016,
     "country": "Ukraine",
     "song": 1944,
@@ -576,6 +640,7 @@
     "location": "Stockholm"
   },
   {
+    "id": 65,
     "year": 2017,
     "country": "Portugal",
     "song": "Amar pelos dois",
@@ -585,6 +650,7 @@
     "location": "Kyiv"
   },
   {
+    "id": 66,
     "year": 2018,
     "country": "Israel",
     "song": "Toy",
@@ -594,6 +660,7 @@
     "location": "Lisbon"
   },
   {
+    "id": 67,
     "year": 2019,
     "country": "Netherlands",
     "song": "Arcade",
@@ -603,6 +670,7 @@
     "location": "Tel Aviv"
   },
   {
+    "id": 68,
     "year": 2020,
     "country": "Contest cancelled due to the COVID-19 pandemic",
     "song": "Contest cancelled due to the COVID-19 pandemic",
@@ -612,6 +680,7 @@
     "location": "Contest cancelled due to the COVID-19 pandemic"
   },
   {
+    "id": 69,
     "year": 2021,
     "country": "Italy",
     "song": "Zitti e buoni",
@@ -621,6 +690,7 @@
     "location": "Rotterdam"
   },
   {
+    "id": 70,
     "year": 2022,
     "country": "Ukraine",
     "song": "Stefania\" (Стефанія)",
