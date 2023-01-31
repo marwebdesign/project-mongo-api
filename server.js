@@ -46,7 +46,6 @@ app.get("/", (req, res) => {
     message: "Welcome to explore the winners of the Eurovision Song Contest!",
     routes: {
       "/winners": "to see all winners",
-      "/winners?year=ENTER_YEAR": "to see a winner from a certain year",
       "/winners?country=ENTER_COUNTRY": "to see all winners from a certain country",
       "/winners?artist=ENTER_ARTIST": "to see all winners from a certain artist",
       "/winners?country=ENTER_COUNTRY&artist=ENTER_ARTIST": "to see if a country has won with same artist more than once (SPOILER ALERT - Try Ireland)"
@@ -54,6 +53,34 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/winners", async (req, res) => {
+
+  const { country, artist } = req.query;
+  const response = {
+    success: true,
+    body: {}
+  }
+  const matchAllRegex = new RegExp(".*");
+  const countryQuery = country ? country : { $regex: matchAllRegex, $options: 'i' };
+  const artistQuery = artist ? artist : { $regex: matchAllRegex, $options: 'i' };
+
+  try {
+    response.body = await Winner.find({ country: countryQuery, artist: artistQuery })
+
+    res.status(200).json({
+      success: true,
+      body: response
+    });
+  } catch (error) {
+    res.status(400).json({
+      success: false,
+      body: {
+        message: error
+      }
+    });
+  }
+
+});
 
 app.get("/winners/:id", async (req, res) => {
   try {
@@ -79,39 +106,6 @@ app.get("/winners/:id", async (req, res) => {
       }
     });
   }
-
-});
-// app.get("/winners/:country/:artist", async (req, res) => {
-app.get("/winners/", async (req, res) => {
-
-  const { year, country, artist } = req.query;
-  const response = {
-    success: true,
-    body: {}
-  }
-  const matchAllRegex = new RegExp(".*");
-  const matchAllNumeric = new RegExp("[0-9]");
-  const countryQuery = country ? country : { $regex: matchAllRegex, $options: 'i' };
-  const artistQuery = artist ? artist : { $regex: matchAllRegex, $options: 'i' };
-  const yearQuery = year ? year : { $regex: matchAllNumeric, $options: 'i' }
-
-  try {
-    response.body = await Winner.find({ year: yearQuery, country: countryQuery, artist: artistQuery })
-    // .limit(2).sort({ energy: 1 }).select({ trackName: 1, artistName: 1 })
-
-    res.status(200).json({
-      success: true,
-      body: response
-    });
-  } catch (error) {
-    res.status(400).json({
-      success: false,
-      body: {
-        message: error
-      }
-    });
-  }
-
 });
 
 // Start the server
